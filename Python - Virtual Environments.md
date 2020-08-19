@@ -1,0 +1,6 @@
+- Installing packages with pip installs the package in a **global** context
+	- What if two different projects need different versions of packages or even of Python?
+- Answer is **virtualenvs**
+- Once the environment is **activiated** you see the environment in () on the left. Any packages installed then are added to the venv - NOT THE GLOBAL 
+- All packages are then installed into this "environment" 
+- Can access and virtualenv using **workon** (NAME_OF_VENV)

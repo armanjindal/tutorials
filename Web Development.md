@@ -1,0 +1,52 @@
+- JSON - JavaScript Object Notation:
+    - Used heavily in data exchange 
+    - Data types - can be used as number, "" for string, and can use arrays wrapped in [], and can have unordered key/value 
+    - Syntax - uses pairs {"key" : "value"}
+    - Javascrip object and JSON different (because the former uses double quotes around the key, and object can have an attribute which is a function) - F12 opens developers
+    - .stringify changes object to JSON and .parse turns it back into an object 
+    - Array of objects: 
+        - 
+- CSS: 
+    - Styles are applied in cascading format - the external style sheet .css takes precedence over the style attribute of the head (depending on order ) and the inline styles overide all other.
+    - Declaration is a key:value pair which styles an element/group of elements as specified by the **selector**
+    - Selector:
+        - Selector is how you apply a styling to a group of elements, can do embedded selections but using **section sub-element { } ** > use to applied to the child of a section. Can use commas to separate multiple 
+        - For applying universal styling across many different kinds of elements use classes which are <section class = x> in HTML and in CSS .X is styled with this .x{}
+        - IDs are used to specify specific elements (cannot be used on any kind)
+    - Specificity:
+        - Multilpe rules  
+- JavaScript - Crash Course:
+    - Originally designed to make the website more interactive
+    - Variables - var is outdated, **let** example = Arman (can be overiden), const cannot be over written. 
+    - Strings :
+        - "" or ''- the data type can be found by using typeof, 
+        - can add and concat strings together (like python), '${firstName} ${lastName}' can be used to format strings. 
+        - Many different **methods** which can manipulate strings (like split)
+    - Numbers: 
+        - Single number type (no difference between float)
+        - Have multiple methods and functions which can be called
+    - Booleans - anything non zero is true, NaN empty strings and undefined are false
+    - Arrays:
+        - instatiated with [], 0 indexed
+        - Many different methods, push is life append, pop removes the last value, 
+        - forEach(element) iterates through each element of the array 
+        - Arrays and objects passed **by reference** so a pointer to the object. Any changes effects both 
+    - Objects:
+        - let example1 = { firstName: 'Arman' lastName: 'I'}
+        - Can access elements of the object with the . operator so example1.FirstName will = Arman 
+        - Can have multiple data types in object. Done in key value pairs 
+        - Also pass by reference, and can add keys on the fly. 
+        - To instatiate a new object use the Object.assign() function
+    - Relatational operators - == checks the value and the triple equals checks the type and the value 
+    - Control flow - or and and same as C
+    - Switch statements - used for a finite number of answer - need to for each case need a break statement , there is a default 
+    - While loop used when you are iterating through something and you have no way to access the length. Then have an if condition with a break statement.  
+    - Functions - Syntax **function** add(){} 
+- Node.js Crash Course: 
+    - JavaScrip Runtime (not a language) that does not run in the browser but on your server (normally written in )
+    - Pitfalls - Not very good for heavy computation, given for interactivity. Singular thread - first queries I/O event (does not block)
+    - Event drive and non blocking (works on a single thread), all this makes Node.js apps very fast & efficient.  Good for intreraction 
+        - When an event a triggered a call back fires
+    - NPM - node package manager - used to install modules - saved in node/modules. All dependencies are in the package.json. Installed locally 
+    -  Use require(./myFile) as an import for the external classes/functions
+    - Event 
